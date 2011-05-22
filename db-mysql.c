@@ -160,7 +160,7 @@ static bool my_sharelog(const char *rem_host, const char *username,
 		goto err_out;
 
 	step = "execute";
-	if (mysql_stmt_execute(stmt))
+	if (mysql_stmt_execute(stmt) != 0)
 		goto err_out;
 
 	rc = true;
