@@ -37,7 +37,7 @@
 		  "SELECT password FROM pool_worker WHERE username = ?",
 		
                 "stmt.sharelog" :
-                  "INSERT INTO shares (time, rem_host, username, our_result, upstream_result, reason, solution) VALUES (?,?,?,?,?,?)"
+                  "INSERT INTO shares (time, rem_host, username, our_result, upstream_result, reason, solution) VALUES (?,?,?,?,?,?,?)"
 
 		# ... or ...
 
