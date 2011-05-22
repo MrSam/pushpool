@@ -1,0 +1,22 @@
+Debian building
+--
+Install dependencies from README-file first. Make sure you have python, libcrypt, libcurl (not only the "curl" binary!)
+Also need build-essential autoconf automake from apt-get before compiling
+
+# apt-get install build-essential autoconf automake
+
+run autogen.sh:
+# ./autogen.sh
+
+run configure
+# ./configure
+
+make & make install (default installs in /usr/local/ if not changed while running ./configure 
+# make && make install
+
+
+Edit & copy the example configs to somewhere.
+Also create custom database structure to match your needs.
+
+Copy & edit example init.d for debian to, if needed.
+Its just a ugly hack, but it works.
