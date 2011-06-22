@@ -1,4 +1,3 @@
-
 /*
  * Copyright 2011 Jeff Garzik
  *
@@ -339,7 +338,7 @@ static bool submit_work(const char *remote_host, const char *auth_user,
 	 */
 	if (srv.easy_target && check_rc == 1) {
 		*json_result = true;
-		sharelog(remote_host, auth_user, "Y", NULL, NULL, hexstr);
+		sharelog(remote_host, auth_user, "Y", "N", "PROOF-OF-WORK", hexstr);
 		return true;
 	}
 
